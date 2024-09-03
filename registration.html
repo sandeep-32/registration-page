@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script>
+            function myFunction(){
+                console.log("Function Called")
+            }
+            const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.has('callFunction')) {
+            const functionName = urlParams.get('callFunction');
+            if (typeof window[functionName] === 'function') {
+                window[functionName]();
+            }
+        }
+        </script>
+    </head>
+<div class="registered-users">
+    <h2>Registered Users</h2>
+    <table>
+        <thead>
+            <tr class="tablerow">
+                <th>Name</th>
+                <th>Email</th>
+                <th>Occupation</th>
+                <th>Department</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="userTableBody">
+            <!-- Dynamically populated rows will go here -->
+        </tbody>
+    </table>
+</div>
+
+<script src="script2.js"></script>
+</html>

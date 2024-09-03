@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+}
+.registration-form, .registered-users {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; 
+}
+
+.registration-form {
+    width: 35%; 
+}
+
+.registered-users {
+    width: 60%; 
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form select, form button {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #164366de;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+@media (max-width: 1024px) {
+    .registration-form {
+        width: 45%;
+    }
+
+    .registered-users {
+        width: 50%; 
+    }
+}
+
+@media (max-width: 768px) {
+    .registration-form, .registered-users {
+        width: 100%; 
+    }
+
+    .container {
+        flex-direction: column;
+    }
+   
+}
+.tablerow{
+    background-color:#164366de;
+    color: #ddd;
+}
+.actions{
+    display: flex;
+    border: 0px;
+    padding: 25px;
+    
+    ;
+    
+}
+.edit{
+    width: 50px;
+    background: blue;
+    color: #f4f4f4;
+    height: 25px;
+    border: 0px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.delete{
+    width: 50px;
+    background: red;
+    color: #f4f4f4;
+    height: 25px;
+    border: 0px;
+    border-radius: 5px;
+}
+@media (max-width: 480px) {
+    .registration-form, .registered-users {
+        padding: 15px; /* Adjust padding for very small screens */
+    }
+
+    .edit, .delete {
+        width: 40px; /* Adjust button size for small screens */
+        height: 20px;
+    }
+
+            th, td {
+                font-size: 14px;
+            }
+        }
+        
